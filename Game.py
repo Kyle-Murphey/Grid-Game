@@ -1,4 +1,5 @@
 import numpy as np
+from Colors import Colors
 
 class Game:
     def __init__(self):
@@ -70,7 +71,7 @@ class Game:
         i = 0
         for m in self.grid:
             for n in self.grid[i]:
-                print(n, sep=' ', end=' ')
+                print(Colors.output(n), sep=' ', end=' ')
             print()
             i += 1
     
